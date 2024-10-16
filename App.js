@@ -1,20 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Login from "./src/screens/login/login.jsx";
+import Account from "./src/screens/account/account.jsx";
+import AbaHome from "./src/screens/abahome/abahome.jsx";
+import AbaCalendar from "./src/screens/abacalendar/abacalendar.jsx";
+import AbaProfile from "./src/screens/abaprofile/abaprofile.jsx";
+import Main from "./src/screens/main/main.jsx";
+import Services from "./src/screens/services/services.jsx";
+import Schedule from "./src/screens/schedule/schedule.jsx";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+function App() {
+
+  return <>
+    <Login />
+  </>;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
